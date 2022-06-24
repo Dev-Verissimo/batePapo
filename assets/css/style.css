@@ -1,0 +1,215 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+        Login
+*/
+
+.login {
+    height: 100vh;
+
+    padding: 20% 0 0;
+}
+
+.login .login__container{
+    margin: 0 auto;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login .acesso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.login .acesso input {
+    width: 50vw;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.login .acesso button {
+    height: 45px;
+width: 109px;
+left: 133px;
+top: 327px;
+border-radius: 9px;
+border: none;
+color: gray;
+}
+
+.login .acesso input.erro{
+    border: 1px solid red;
+}
+
+/*
+        Login
+*/
+
+header {
+    background-color: white;
+    height: 80px;
+    width: calc(100% - 40px);
+    padding: 0 22px;
+    margin-bottom: 26px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 80%;
+}
+
+header ion-icon {
+    font-size: 42.19px;
+}
+
+.userIn {
+    background-color: #E5E5E5;
+}
+
+.entraNaSala{
+    background-color: #DCDCDC;
+}
+
+.mensagemPrivada {
+    background-color: #FFDEDE;
+}
+
+.mensagemParaTodos{
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.chat {
+    max-height: calc(100vh - 200px);
+    margin: 95px 0 120px;
+    overflow-y: scroll;
+}
+
+.chat div{
+    min-height: 40px;
+    border-radius: 2px;
+    margin-bottom: 3px;
+    padding: 12px 8px;
+
+    box-sizing: border-box;
+    line-height: 16.41px;
+}
+
+.chat div span{
+    color: #AAAAAA;
+}
+
+.chat div strong{
+    padding: 0 5px;
+}
+
+.enviarMensagem {
+    position: fixed;
+    bottom: 0;
+
+    width: calc(100% - 40px);
+    height: 80px;
+    padding: 17px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+}
+
+.enviarMensagem input {
+    height: 80%;
+    line-height: 100%;
+    font-size: 18px;
+    outline: 0;
+    border: none;
+    width: 100%;
+}
+
+.enviarMensagem input[type="text"]:focus {
+    border: none;
+    outline: 0;
+}
+
+.enviarMensagem ion-icon {
+    font-size: 26px;
+}
+
+aside {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+aside .menu_lateral {
+    background-color: white;
+    width: 70%;
+
+}
+
+aside .menu_lateral h1{
+    font-size: 28px;
+    text-align: center;
+    height: 84px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+aside .contatos {
+    padding: 0 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+aside .contatos li, .visibilidade li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 36px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+
+/*Javascript*/
+.invisible {
+    display: none;
+}
+
+.check {
+    display: none;
+}
+
+.selecionado .check{
+    display: inherit;
+    color: green;
+}

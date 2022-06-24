@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login__container">
+           <img src="assets/img/logo 2.png" alt="Logo">
+
+            <div class="acesso">
+                <input type="text" placeholder="Digite seu nome">
+                <button type="button">Entrar</button>
+            </div> 
+        </div>
+        
+    </div>
+
+    <div class="userIn invisible">
+        <header>
+            <img src="assets/img/logo 2.png" alt="logo">
+            <ion-icon class="usersSidebar" name="people"></ion-icon>
+        </header>
+        <div class="chat"></div>
+        <div class="enviarMensagem">
+            <input type="text" placeholder="Escreva aqui ...">
+            <ion-icon class="enviarMensagem-users" name="paper-plane-outline"></ion-icon>
+        </div>
+        <aside class="invisible">
+            <div class="menu_lateral">
+                <h1>
+                    Escolha um contato para enviar mensagem:
+                </h1>
+                <ul class="contatos">
+                    <li onclick="selecionaUser(this, 'Todos')" class="enviarMensagensParaTodos selecionado">
+                        <ion-icon name="people"></ion-icon>
+                        <span>
+                            Todos
+                        </span>
+                        <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                    </li>
+                </ul>
+                <h1>
+                    Escolha a visibilidade: 
+                </h1>
+                <ul class="visibilidade">
+                    <li class="message selecionado" onclick="selecionaVisibilidade(this, 'message')">
+                        <ion-icon name="lock-open"></ion-icon>
+                        <span>Público</span>
+                        <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                    </li>
+                    <li class="private_message" onclick="selecionaVisibilidade(this, 'private_message')">
+                        <ion-icon name="lock-closed"></ion-icon>
+                        <span>Reservado</span>
+                        <ion-icon class="check" name="checkmark-sharp"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
